@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title>表格</title>
+      <link href="/2018/05/03/%E6%97%B6%E9%97%B4%E8%A1%A8/"/>
+      <url>/2018/05/03/%E6%97%B6%E9%97%B4%E8%A1%A8/</url>
+      <content type="html"><![CDATA[<table><thead><tr><th style="text-align:left">左对齐</th><th style="text-align:center">居中对齐</th><th style="text-align:right">右对齐</th></tr></thead><tbody><tr><td style="text-align:left">:blush:</td><td style="text-align:center">:wink:</td><td style="text-align:right">:100:</td></tr><tr><td style="text-align:left">:link:</td><td style="text-align:center">:a:</td><td style="text-align:right">:parking:</td></tr></tbody></table>]]></content>
+      
+      <categories>
+          
+          <category> 测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>最后一个士兵</title>
       <link href="/2018/05/01/2018.05.01/"/>
       <url>/2018/05/01/2018.05.01/</url>
