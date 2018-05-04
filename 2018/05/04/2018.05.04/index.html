@@ -68,18 +68,12 @@
 		
 <!-- Layouts -->
 
-    <!-- Tags Cloud -->
-    
-<link rel="stylesheet" href="/css/item.css" />
-<style >
-    .row a{
-        border-bottom: none;
-    }
-    .special{
-        padding: 0;
-        padding: 2rem;
-    }
-</style>
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
 <body class="is-loading">
     <!-- Wrapper 外包 s-->
     <div id="wrapper" class="fade-in">
@@ -150,30 +144,108 @@
 		            
 			</ul>
 </nav>
-                <div id="main">
-            <!-- Main first s-->
-            <article id="me" class="panel">
-                <header style="color: #000000">
-                    <h1>Sinyonce</h1>
-                    <p>Life is greater than everything</p>
-                </header>
-                <a href="" class="jumplink pic">
-                    <span class="arrow icon fa-chevron-right"><span></span></span>
-                    <img src="/images/me.jpg" alt="" />
-                </a>
-            </article>
-            <!-- Main first e-->
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(/gallery/05.04.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >2018.05.04</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <p><img src="https://i.imgur.com/Fn6Ku7L.jpg" alt=""></p>
+<p>比喻的手法运用的淋漓尽致。</p>
+<p>黑孩身世不幸，命运悲惨。拥有与其年龄不相符的压抑、自尊与要强。</p>
+<p>在美丽菊子身上，看到了农村姑娘的善良与朴素，但最后，她那长睫毛的美丽的眼睛却被白石片毁掉了，代表了美和善良难以生存。</p>
+<p>在那个颠倒是非的年代，普通人必须承受巨大的压力，所以干脆就沉默不语了，而讲话也不得不隐讳再隐讳，就像老铁匠。</p>
+<p>平淡中深刻地对社会各种现象进行揭露和批判，引发人们对社会的思考。</p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://yoursite.com/2018/05/04/2018.05.04/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://yoursite.com/2018/05/04/2018.05.04/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
         </div>
-
-        <section class="special">
-                            <div class="row" style="border-bottom: none;">
-
-        <a href="/tags/测试/" style="font-size: 16px;">测试</a> <a href="/tags/纪录/" style="font-size: 17px;">纪录</a> <a href="/tags/读后感/" style="font-size: 16px;">读后感</a>
-
-                            </div>
-                    
-        </section>
-
         <!-- Copyright 版权 start -->
                 <div id="copyright">
             <ul>
@@ -186,6 +258,7 @@
         </div>
     </div>
 </body>
+
 
 
  	
