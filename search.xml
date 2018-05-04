@@ -27,7 +27,7 @@
       <title>测试</title>
       <link href="/2018/05/03/%E6%B5%8B%E8%AF%95/"/>
       <url>/2018/05/03/%E6%B5%8B%E8%AF%95/</url>
-      <content type="html"><![CDATA[<table><thead><tr><th style="text-align:left">左对齐</th><th style="text-align:center">居中对齐</th><th style="text-align:right">右对齐</th></tr></thead><tbody><tr><td style="text-align:left">:blush:</td><td style="text-align:center">:wink:</td><td style="text-align:right">:100:</td></tr><tr><td style="text-align:left">:link:</td><td style="text-align:center">:a:</td><td style="text-align:right">:parking:</td></tr></tbody></table><p>:+1:</p><p><strong>加粗文体</strong><br><em>斜体文字</em><br><del>删除线</del><br><strong><em>斜体加粗</em></strong></p>]]></content>
+      <content type="html"><![CDATA[<table><thead><tr><th style="text-align:left">左对齐</th><th style="text-align:center">居中对齐</th><th style="text-align:right">右对齐</th></tr></thead><tbody><tr><td style="text-align:left">:blush:</td><td style="text-align:center">:wink:</td><td style="text-align:right">:100:</td></tr><tr><td style="text-align:left">:link:</td><td style="text-align:center">:a:</td><td style="text-align:right">:parking:</td></tr></tbody></table><p>:+1:</p><p><strong>加粗文体</strong><br><em><em>斜体文字</em></em><br><del>删除线</del><br><strong><em>斜体加粗</em></strong></p><p><em>斜体文字</em></p>]]></content>
       
       <categories>
           
