@@ -1,68 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[将腾讯视频的QVL格式转化为MP4格式]]></title>
-    <url>%2F2018%2F05%2F08%2F2018.05.08%2F</url>
-    <content type="text"><![CDATA[在腾讯视频下载的视频，格式是特殊格式qlv，而如果我们需要对这些视频进行剪辑，比如用AE剪辑，这时候我们会发现AE是无法导入格式为qlv的视频的，那怎么办？ 我刚开始是想将文件的后缀名.qlv改为.mp4 ，但是也毫无意义，还是无法打开。 再后来我去网上找所谓的视频格式转换器，找了N多个，但是实测后发现，转化后只有音频，无视频，还是不行。狼窝视频转化，万能转化，一堆堆的都不行。 最后将近放弃的时候，我在网上发现了一个简单的方法，不用下载什么转换器，只需要一个命令就行了。具体如何，等我再熟悉熟悉，才可以更清楚地表述出来。]]></content>
-      <tags>
-        <tag>新技能</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[生活并不是这么简单]]></title>
-    <url>%2F2018%2F05%2F05%2F%E7%94%9F%E6%B4%BB%E5%B9%B6%E4%B8%8D%E6%98%AF%E8%BF%99%E4%B9%88%E7%AE%80%E5%8D%95%2F</url>
-    <content type="text"><![CDATA[说不幸，确实是不幸的，但是要是说幸运，也确实是幸运的。 也许只有他们自己知道自己经历了什么。]]></content>
-      <tags>
-        <tag>心情</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[2018.05.04]]></title>
-    <url>%2F2018%2F05%2F04%2F2018.05.04%2F</url>
-    <content type="text"><![CDATA[比喻的手法运用的淋漓尽致。 黑孩身世不幸，命运悲惨。拥有与其年龄不相符的压抑、自尊与要强。 在美丽菊子身上，看到了农村姑娘的善良与朴素，但最后，她那长睫毛的美丽的眼睛却被白石片毁掉了，代表了美和善良难以生存。 在那个颠倒是非的年代，普通人必须承受巨大的压力，所以干脆就沉默不语了，而讲话也不得不隐讳再隐讳，就像老铁匠。 平淡中深刻地对社会各种现象进行揭露和批判，引发人们对社会的思考。]]></content>
+<search> 
+  
+    
+    <entry>
+      <title>将腾讯视频的QVL格式转化为MP4格式</title>
+      <link href="/2018/05/08/2018.05.08/"/>
+      <url>/2018/05/08/2018.05.08/</url>
+      <content type="html"><![CDATA[<p>在腾讯视频下载的视频，格式是特殊格式qlv，而如果我们需要对这些视频进行剪辑，比如用AE剪辑，这时候我们会发现AE是无法导入格式为qlv的视频的，那怎么办？</p><p>我刚开始是想将文件的后缀名.qlv改为.mp4 ，但是也毫无意义，还是无法打开。</p><p>再后来我去网上找所谓的视频格式转换器，找了N多个，但是实测后发现，转化后只有音频，无视频，还是不行。狼窝视频转化，万能转化，一堆堆的都不行。</p><p>最后将近放弃的时候，我在网上发现了一个简单的方法，不用下载什么转换器，只需要一个命令就行了。具体如何，等我再熟悉熟悉，才可以更清楚地表述出来。</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> 新技能 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>生活并不是这么简单</title>
+      <link href="/2018/05/05/%E7%94%9F%E6%B4%BB%E5%B9%B6%E4%B8%8D%E6%98%AF%E8%BF%99%E4%B9%88%E7%AE%80%E5%8D%95/"/>
+      <url>/2018/05/05/%E7%94%9F%E6%B4%BB%E5%B9%B6%E4%B8%8D%E6%98%AF%E8%BF%99%E4%B9%88%E7%AE%80%E5%8D%95/</url>
+      <content type="html"><![CDATA[<p>说不幸，确实是不幸的，但是要是说幸运，也确实是幸运的。</p><p>也许只有他们自己知道自己经历了什么。</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> 心情 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>2018.05.04</title>
+      <link href="/2018/05/04/2018.05.04/"/>
+      <url>/2018/05/04/2018.05.04/</url>
+      <content type="html"><![CDATA[<p><img src="https://i.imgur.com/Fn6Ku7L.jpg" alt=""></p><p>比喻的手法运用的淋漓尽致。</p><p>黑孩身世不幸，命运悲惨。拥有与其年龄不相符的压抑、自尊与要强。</p><p>在美丽菊子身上，看到了农村姑娘的善良与朴素，但最后，她那长睫毛的美丽的眼睛却被白石片毁掉了，代表了美和善良难以生存。</p><p>在那个颠倒是非的年代，普通人必须承受巨大的压力，所以干脆就沉默不语了，而讲话也不得不隐讳再隐讳，就像老铁匠。</p><p>平淡中深刻地对社会各种现象进行揭露和批判，引发人们对社会的思考。</p>]]></content>
+      
       <categories>
-        <category>心情</category>
+          
+          <category> 心情 </category>
+          
       </categories>
-      <tags>
-        <tag>读后感</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[测试]]></title>
-    <url>%2F2018%2F05%2F03%2F%E6%B5%8B%E8%AF%95%2F</url>
-    <content type="text"><![CDATA[:+1::o: 加粗文体斜体文字删除线斜体加粗 斜体文字 标题一标题一标题二下面是一个引用： 大家好，我是一个引用只是一个引用 我需要在文中插入快捷键ctrl+v 我需要引用一个代码：123int a = 1;int b = 2;int c = 3; 左对齐 居中对齐 右对齐 左对齐列 居中对齐列 右对齐列 1 2 3]]></content>
+      
+      
+        <tags>
+            
+            <tag> 读后感 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>测试</title>
+      <link href="/2018/05/03/%E6%B5%8B%E8%AF%95/"/>
+      <url>/2018/05/03/%E6%B5%8B%E8%AF%95/</url>
+      <content type="html"><![CDATA[<p>:+1:<br>:o:</p><p><strong>加粗文体</strong><br><em><em>斜体文字</em></em><br><del>删除线</del><br><strong><em>斜体加粗</em></strong></p><p><em>斜体文字</em></p><h1 id="标题一"><a href="#标题一" class="headerlink" title="标题一"></a>标题一</h1><h3 id="标题一-1"><a href="#标题一-1" class="headerlink" title="标题一"></a>标题一</h3><h2 id="标题二"><a href="#标题二" class="headerlink" title="标题二"></a>标题二</h2><p>下面是一个引用：</p><blockquote><p>大家好，我是一个引用<br>只是一个引用</p></blockquote><p>我需要在文中插入快捷键<code>ctrl+v</code><br> 我需要引用一个代码：<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">int</span> b = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">int</span> c = <span class="number">3</span>;</span><br></pre></td></tr></table></figure></p><table><thead><tr><th style="text-align:left">左对齐</th><th style="text-align:center">居中对齐</th><th style="text-align:right">右对齐</th></tr></thead><tbody><tr><td style="text-align:left">左对齐列</td><td style="text-align:center">居中对齐列</td><td style="text-align:right">右对齐列</td></tr><tr><td style="text-align:left">1</td><td style="text-align:center">2</td><td style="text-align:right">3</td></tr></tbody></table>]]></content>
+      
       <categories>
-        <category>测试</category>
+          
+          <category> 测试 </category>
+          
       </categories>
-      <tags>
-        <tag>测试</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[最后一个士兵]]></title>
-    <url>%2F2018%2F05%2F01%2F2018.05.01%2F</url>
-    <content type="text"><![CDATA[一个小人物，稀里糊涂地摊上大事儿，睡着了再醒过来，天都变了。最逗的幽默应该就是这种黑色幽默。 乱世士兵的囧途，再次展现日寇投降后的社会动荡。]]></content>
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>最后一个士兵</title>
+      <link href="/2018/05/01/2018.05.01/"/>
+      <url>/2018/05/01/2018.05.01/</url>
+      <content type="html"><![CDATA[<p>一个小人物，稀里糊涂地摊上大事儿，睡着了再醒过来，天都变了。<br>最逗的幽默应该就是这种黑色幽默。</p><p><img src="https://i.imgur.com/QRU8tww.jpg" alt=""><br>乱世士兵的囧途，再次展现日寇投降后的社会动荡。</p>]]></content>
+      
       <categories>
-        <category>读后感</category>
+          
+          <category> 读后感 </category>
+          
       </categories>
-      <tags>
-        <tag>纪录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[初搭建]]></title>
-    <url>%2F2018%2F04%2F30%2Friji%2F</url>
-    <content type="text"><![CDATA[今天忙忙碌碌，弄了一整天，算是搭建好一个简简单单的博客了。]]></content>
+      
+      
+        <tags>
+            
+            <tag> 纪录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>初搭建</title>
+      <link href="/2018/04/30/riji/"/>
+      <url>/2018/04/30/riji/</url>
+      <content type="html"><![CDATA[<h2 id="今天忙忙碌碌，弄了一整天，算是搭建好一个简简单单的博客了。"><a href="#今天忙忙碌碌，弄了一整天，算是搭建好一个简简单单的博客了。" class="headerlink" title="今天忙忙碌碌，弄了一整天，算是搭建好一个简简单单的博客了。"></a><em>今天忙忙碌碌，弄了一整天，算是搭建好一个简简单单的博客了。</em></h2><p><img src="https://i.imgur.com/mAlEM5d.jpg" alt=""></p>]]></content>
+      
       <categories>
-        <category>心情</category>
+          
+          <category> 心情 </category>
+          
       </categories>
-      <tags>
-        <tag>纪录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[HEXO简介]]></title>
-    <url>%2F2018%2F04%2F30%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> 纪录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>HEXO简介</title>
+      <link href="/2018/04/30/hello-world/"/>
+      <url>/2018/04/30/hello-world/</url>
+      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+    </entry>
+    
+  
+  
 </search>
