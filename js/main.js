@@ -1,259 +1,136 @@
-(function($) {
-
-	skel.breakpoints({
-		xlarge:	'(max-width: 1680px)',
-		large:	'(max-width: 1280px)',
-		medium:	'(max-width: 980px)',
-		small:	'(max-width: 736px)',
-		xsmall:	'(max-width: 480px)',
-		xxsmall: '(max-width: 360px)'
-	});
-
-	/**
-	 * Applies parallax scrolling to an element's background image.
-	 * @return {jQuery} jQuery object.
-	 */
-	$.fn._parallax = function(intensity) {
-
-		var	$window = $(window),
-			$this = $(this);
-
-		if (this.length == 0 || intensity === 0)
-			return $this;
-
-		if (this.length > 1) {
-
-			for (var i=0; i < this.length; i++)
-				$(this[i])._parallax(intensity);
-
-			return $this;
-
-		}
-
-		if (!intensity)
-			intensity = 0.25;
-
-		$this.each(function() {
-
-			var $t = $(this),
-				$bg = $('<div class="bg"></div>').appendTo($t),
-				on, off;
-
-			on = function() {
-
-				$bg
-					.removeClass('fixed')
-					.css('transform', 'none');
-
-				$window
-					.on('scroll._parallax', function() {
-
-						$bg.css('transform', 'none');
-
-					});
-			};
-
-			off = function() {
-
-				$bg
-					.addClass('fixed')
-					.css('transform', 'none');
-
-				$window
-					.off('scroll._parallax');
-
-			};
-
-			// Disable parallax on ..
-				if (skel.vars.browser == 'ie'		// IE
-				||	skel.vars.browser == 'edge'		// Edge
-				||	window.devicePixelRatio > 1		// Retina/HiDPI (= poor performance)
-				||	skel.vars.mobile)				// Mobile devices
-					off();
-
-			// Enable everywhere else.
-				else {
-
-					skel.on('!large -large', on);
-					skel.on('+large', off);
-
-				}
-
-		});
-
-		$window
-			.off('load._parallax resize._parallax')
-			.on('load._parallax resize._parallax', function() {
-				$window.trigger('scroll');
-			});
-
-		return $(this);
-
-	};
-
-	$(function() {
-
-		var	$window = $(window),
-			$body = $('body'),
-			$wrapper = $('#wrapper'),
-			$header = $('#header'),
-			$nav = $('#nav'),
-			$main = $('#main'),
-			$navPanelToggle, $navPanel, $navPanelInner;
-
-		// Disable animations/transitions until the page has loaded.
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 100);
-			});
-
-		// Prioritize "important" elements on medium.
-			skel.on('+medium -medium', function() {
-				$.prioritize(
-					'.important\\28 medium\\29',
-					skel.breakpoint('medium').active
-				);
-			});
-
-		// Scrolly.
-			$('.scrolly').scrolly();
-
-		// Background.
-			$wrapper._parallax(0.925);
-
-		// Nav Panel.
-
-			// Toggle.
-				$navPanelToggle = $(
-					'<a href="#navPanel" id="navPanelToggle">Menu</a>'
-				)
-					.appendTo($wrapper);
-
-				// Change toggle styling once we've scrolled past the header.
-					$header.scrollex({
-						bottom: '5vh',
-						enter: function() {
-							$navPanelToggle.removeClass('alt');
-						},
-						leave: function() {
-							$navPanelToggle.addClass('alt');
-						}
-					});
-
-			// Panel.
-				$navPanel = $(
-					'<div id="navPanel">' +
-						'<nav>' +
-						'</nav>' +
-						'<a href="#navPanel" class="close"></a>' +
-					'</div>'
-				)
-					.appendTo($body)
-					.panel({
-						delay: 500,
-						hideOnClick: true,
-						hideOnSwipe: true,
-						resetScroll: true,
-						resetForms: true,
-						side: 'right',
-						target: $body,
-						visibleClass: 'is-navPanel-visible'
-					});
-
-				// Get inner.
-					$navPanelInner = $navPanel.children('nav');
-
-				// Move nav content on breakpoint change.
-					var $navContent = $nav.children();
-
-					skel.on('!medium -medium', function() {
-
-						// NavPanel -> Nav.
-							$navContent.appendTo($nav);
-
-						// Flip icon classes.
-							$nav.find('.icons, .icon')
-								.removeClass('alt');
-
-					});
-
-					skel.on('+medium', function() {
-
-						// Nav -> NavPanel.
-						$navContent.appendTo($navPanelInner);
-
-						// Flip icon classes.
-							$navPanelInner.find('.icons, .icon')
-								.addClass('alt');
-
-					});
-
-				// Hack: Disable transitions on WP.
-					if (skel.vars.os == 'wp'
-					&&	skel.vars.osVersion < 10)
-						$navPanel
-							.css('transition', 'none');
-
-		// Intro.
-			var $intro = $('#intro');
-
-			if ($intro.length > 0) {
-
-				// Hack: Fix flex min-height on IE.
-					if (skel.vars.browser == 'ie') {
-						$window.on('resize.ie-intro-fix', function() {
-
-							var h = $intro.height();
-
-							if (h > $window.height())
-								$intro.css('height', 'auto');
-							else
-								$intro.css('height', h);
-
-						}).trigger('resize.ie-intro-fix');
-					}
-
-				// Hide intro on scroll (> small).
-					skel.on('!small -small', function() {
-
-						$main.unscrollex();
-
-						$main.scrollex({
-							mode: 'bottom',
-							top: '25vh',
-							bottom: '-50vh',
-							enter: function() {
-								$intro.addClass('hidden');
-							},
-							leave: function() {
-								$intro.removeClass('hidden');
-							}
-						});
-
-					});
-
-				// Hide intro on scroll (<= small).
-					skel.on('+small', function() {
-
-						$main.unscrollex();
-
-						$main.scrollex({
-							mode: 'middle',
-							top: '15vh',
-							bottom: '-15vh',
-							enter: function() {
-								$intro.addClass('hidden');
-							},
-							leave: function() {
-								$intro.removeClass('hidden');
-							}
-						});
-
-				});
-
-			}
-
-	});
+(function ($) {
+    // To top button
+    $("#back-to-top").on('click', function () {
+        $('body, html').animate({ scrollTop: 0 }, 600);
+    });
+
+    // Nav bar toggle
+    $('#main-nav-toggle').on('click', function () {
+        $('.nav-container-inner').slideToggle();
+    });
+
+    // Caption
+    $('.article-entry').each(function(i) {
+        $(this).find('img').each(function() {
+            if (this.alt && !(!!$.prototype.justifiedGallery && $(this).parent('.justified-gallery').length)) {
+                $(this).after('<span class="caption">' + this.alt + '</span>');
+            }
+
+            // 对于已经包含在链接内的图片不适用lightGallery
+            if ($(this).parent().prop("tagName") !== 'A') {
+                $(this).wrap('<a href="' + this.src + '" title="' + this.alt + '" class="gallery-item"></a>');
+            }
+        });
+
+    });
+    if (typeof lightGallery != 'undefined') {
+        var options = {
+            selector: '.gallery-item',
+        };
+        $('.article-entry').each(function(i, entry) {
+            lightGallery(entry, options);
+        });
+        lightGallery($('.article-gallery')[0], options);
+    }
+    if (!!$.prototype.justifiedGallery) {  // if justifiedGallery method is defined
+        var options = {
+            rowHeight: 140,
+            margins: 4,
+            lastRow: 'justify'
+        };
+        $('.justified-gallery').justifiedGallery(options);
+    }
+
+    // Sidebar expend
+    $('#sidebar .sidebar-toggle').click(function () {
+        if($('#sidebar').hasClass('expend')) {
+            $('#sidebar').removeClass('expend');
+        } else {
+            $('#sidebar').addClass('expend');
+        }
+    });
+
+
+    // Remove extra main nav wrap
+    $('.main-nav-list > li').unwrap();
+
+    // Highlight current nav item
+    $('#main-nav > li > .main-nav-list-link').each(function () {
+        if($('.page-title-link').length > 0){
+            if ($(this).html().toUpperCase() == $('.page-title-link').html().toUpperCase()) {
+                $(this).addClass('current');
+            } else if ($(this).attr('href') == $('.page-title-link').attr('data-url')) {
+                $(this).addClass('current');
+            }
+        }
+    });
+
+    // Auto hide main nav menus
+    function autoHideMenus(){
+        var max_width = $('.nav-container-inner').width() - 10;
+        var main_nav_width = $('#main-nav').width();
+        var sub_nav_width = $('#sub-nav').width();
+        if (main_nav_width + sub_nav_width > max_width) {
+            // If more link not exists
+            if ($('.main-nav-more').length == 0) {
+                $(['<li class="main-nav-list-item top-level-menu main-nav-more">',
+                    '<a class="main-nav-list-link" href="javascript:;">More</a>',
+                    '<ul class="main-nav-list-child">',
+                    '</ul></li>'].join('')).appendTo($('#main-nav'));
+                // Bind hover event
+                $('.main-nav-more').hover(function () {
+                    if($(window).width() < 480) {
+                        return;
+                    }
+                    $(this).children('.main-nav-list-child').slideDown('fast');
+                }, function () {
+                    if($(window).width() < 480) {
+                        return;
+                    }
+                    $(this).children('.main-nav-list-child').slideUp('fast');
+                });
+            }
+            var child_count = $('#main-nav').children().length;
+            for (var i = child_count - 2; i >= 0; i--) {
+                var element = $('#main-nav').children().eq(i);
+                if (main_nav_width + sub_nav_width > max_width) {
+                    element.prependTo($('.main-nav-more > ul'));
+                    main_nav_width = $('#main-nav').width();
+                } else {
+                    return;
+                }
+            }
+        }
+        // Nav bar is wide enough
+        if ($('.main-nav-more').length > 0) {
+            $('.main-nav-more > ul').children().appendTo($('#main-nav'));
+            $('.main-nav-more').remove();
+        }
+    }
+    autoHideMenus();
+
+    $(window).resize(function () {
+        autoHideMenus();
+    });
+
+    // Fold second-level menu
+    $('.main-nav-list-item').hover(function () {
+        if ($(window).width() < 480) {
+            return;
+        }
+        $(this).children('.main-nav-list-child').slideDown('fast');
+    }, function () {
+        if ($(window).width() < 480) {
+            return;
+        }
+        $(this).children('.main-nav-list-child').slideUp('fast');
+    });
+
+    // Add second-level menu mark
+    $('.main-nav-list-item').each(function () {
+        if ($(this).find('.main-nav-list-child').length > 0) {
+            $(this).addClass('top-level-menu');
+        }
+    });
 
 })(jQuery);
